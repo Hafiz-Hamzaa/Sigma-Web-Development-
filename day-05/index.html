@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Images,List and Table</title>
+  </head>
+  <body>
+    <!-- Images in HTML -->
+    <img
+      src="https://tse2.mm.bing.net/th?id=OIP.N_anztpFCPTBVRUMWvuGBwHaHa&pid=Api&P=0&h=220"
+      alt="Html-Image"
+      width="100"
+    />
+
+    <!-- List in HTML -->
+    <!-- 3 Types of List -->
+    <!-- Unordered List -->
+    <ul>
+      <li>
+        Apple
+        <!-- Sublist or Nested List -->
+        <ul>
+          <li>Color: Red</li>
+        </ul>
+      </li>
+      <li>Mango</li>
+      <li>Orange</li>
+    </ul>
+    <!-- Ordered List -->
+    <ol>
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Orange</li>
+    </ol>
+    <!-- Definition List -->
+    <dl>
+      <dt>HTML:</dt>
+      <dd>It is a markup lnaguage</dd>
+    </dl>
+
+    <!-- Tables in HTML -->
+    <table border="2">
+      <caption>
+        Information
+      </caption>
+      <tr>
+        <th>Name</th>
+        <th>Roll No</th>
+        <th>Class</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td rowspan="2">1234</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Hamza</td>
+        <td>1234</td>
+      </tr>
+      <tr>
+        <td>Hamza</td>
+        <td colspan="2">1234</td>
+      </tr>
+    </table>
+
+    <!-- Forms in HTML -->
+    <!-- Forms are used to collect user information -->
+    <!-- action attribute : mtlb ye data kaha send ho rha hai -->
+     <h1>Form</h1>
+    <form action="php.com">
+      <label for="name"
+        >Enter your Name:
+        <input type="text" placeholder="Enter your name" id="name" />
+      </label>
+      <br />
+      <label for="password"
+        >Enter your Name:
+        <input type="password" placeholder="Enter your name" id="password" />
+      </label>
+      <br />
+      <h3>Select One Option</h3>
+      <div>
+        <input type="radio" id="huey" name="drone" value="huey" checked />
+        <label for="huey">Huey</label>
+      </div>
+
+      <div>
+        <input type="radio" id="dewey" name="drone" value="dewey" />
+        <label for="dewey">Dewey</label>
+      </div>
+
+      <div>
+        <input type="radio" id="louie" name="drone" value="louie" />
+        <label for="louie">Louie</label>
+      </div>
+      <h3>Select Multiple Option</h3>
+      <div>
+        <label for="checkbox">
+            <input type="checkbox">
+            HTML
+        </label>
+      </div>
+      <div>
+        <label for="checkbox">
+            <input type="checkbox">
+            CSS
+        </label>
+      </div>
+      <div>
+        <label for="checkbox">
+            <input type="checkbox">
+            JS
+        </label>
+      </div>
+      
+      <div>
+        <select name="city">
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="kp">KP</option>
+        </select>
+      </div>
+
+      <textarea rows="3" cols="12" placeholder="Commnets..."></textarea><br>
+      <input type="submit" value="submit">
+    </form>
+  </body>
+</html>
