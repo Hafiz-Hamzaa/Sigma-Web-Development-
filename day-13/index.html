@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Universal Selector means appy style on the whole page */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*Element Selector*/
+        h1{
+            background-color: blueviolet;
+            height: 40px;
+            color: #fff;
+        }
+        /* ID Selector */
+        #para{
+            background-color: yellow;
+            color: red;
+        }
+        /* Class Selector */
+        .btn{
+            background-color: green;
+            color: #fff;
+            width: 100px;
+            height: 30px;
+            border: 2px solid black;
+        }
+        /* Child Selector */
+        div > p{
+            background-color: palegreen;
+            color: blue;
+        }
+        /* Pseudo Selector */
+        .btn:hover{
+            background-color: #fff;
+            color: black;
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: palevioletred;
+        }
+        .btn:active{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Most Common Selector</h1>
+    <!-- Id is always unique kbh bh same id kisi or kai pas nh hoskti -->
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus nam omnis enim modi praesentium eos?</p>
+    <!-- Class same hoskti hai multiple elements per ham same class dekar same stylng apply krkste hai -->
+    <button class="btn">Click me</button>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi velit et quas?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod error perferendis et!</p>
+    </div>
+
+    <a href="https://google.com">Google</a>
+</body>
+</html>

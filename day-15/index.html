@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonts , Text and Color</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* External Font */
+      @import url("https://fonts.googleapis.com/css2?family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&display=swap");
+      h1 {
+        text-decoration: dashed;
+        text-transform: capitalize;
+        text-decoration-color: aqua;
+        font-size: 20px;
+        /* Font kis style ka dikhe ga or ye fall back mechanism bh hota hai jese aik font na chale to dosra chl jai */
+        font-family: "Courier New", Courier, monospace;
+      }
+      div > p {
+        width: 100px;
+        height: 80px;
+        background-color: aqua;
+        overflow: hidden auto;
+      }
+      h2 {
+        font-family: "Grey Qo", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      h4 {
+        font-family: "Playwrite VN", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Font</h1>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, id
+        pariatur. At. Lorem ipsum dolor sit amet consectetur adipisicing elit
+      </p>
+    </div>
+
+    <h2>FONT Family</h2>
+    <h4>Hello</h4>
+  </body>
+</html>
