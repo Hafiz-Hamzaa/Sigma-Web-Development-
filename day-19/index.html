@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow & Outline $ List Styling</title>
+    <style>
+        body{
+            background-color: rgb(172, 212, 202);
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            /* h-offset v-offset blur spread color */
+            box-shadow: 2px 2px 4px greenyellow;
+            outline: 10px solid orange;
+            padding: 20px;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        ul>li{
+            list-style: none;
+            list-style: circle;
+            list-style-position: inside;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        /* CSS Overflow */
+        .boxone{
+            width: 100px;
+            height: 60px;
+            background-color: aquamarine;
+            /* overflow: hidden; */
+            /* overflow-x: scroll; */
+            /* overflow-y: scroll; */
+            overflow:  auto scroll;
+            /* white-space: nowrap; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div> -->
+    <!-- Creating a Navbar -->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Conatct</li>
+        </ul>
+    </nav>
+
+    <!-- CSS Overflow -->
+    <div class="boxone">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non delectus ea numquam harum fuga nesciunt eveniet magnam corporis. Libero eum sed.</p>
+    </div>
+</body>
+</html>

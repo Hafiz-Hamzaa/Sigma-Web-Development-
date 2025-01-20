@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        /* By default sbki position static hoti hai */
+        .cont{
+            width: 60vw;
+            height: 60vh;
+            border: 2px solid black;
+            position: relative;
+        }
+        .box{
+            width: 150px;
+            height: 120px;
+            background-color: aqua;
+            display: inline-block;
+        }
+        .boxone{
+            position: relative;
+            top: 20px;
+        }
+        .boxtwo{
+            /* absolute hamesha closest nearse ancestor ko dekhta hai */
+            position: absolute;
+            right: 0px;
+            border: 2px solid green;
+            z-index: 1;
+        }
+        .boxthree{
+            position: fixed;
+            right: 0;
+        }
+        .boxfour{
+            position: sticky;
+            top: 0;
+        }
+        .boxsix{
+            position: relative;
+            left: 120px;
+            border: 2px solid black;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+    <div class="box boxone"></div>
+    <div class="box boxtwo"></div>
+    <div class="box boxthree"></div>
+    <div class="box boxfour"></div>
+    <div class="box boxfive"></div>
+    <div class="box boxsix"></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore autem quo harum, commodi explicabo, pariatur earum laudantium repellendus doloribus cupiditate eveniet tenetur ipsa dolores ex aut provident blanditiis ipsum consectetur animi magnam minus reiciendis. Rerum earum officiis ullam repellendus velit possimus nisi perferendis error reprehenderit quos ea, mollitia saepe pariatur enim aut sunt praesentium consectetur, laborum nemo harum! Adipisci aliquid quod repellat atque eveniet distinctio dignissimos totam consectetur, asperiores provident reiciendis error eaque est facilis soluta temporibus numquam, blanditiis vitae laudantium ipsum magnam velit illum ullam. Est mollitia repellendus voluptatum id nemo reiciendis, quis placeat omnis dolorum nam ipsam vitae nulla fugit porro delectus? Distinctio nesciunt aliquid, provident natus dolorem nam minima molestias quos hic repudiandae dolor excepturi temporibus quidem dolore doloribus adipisci officiis quibusdam esse numquam, in ducimus? Alias quia veniam nisi. Nostrum nemo tempore animi officia quidem minima facere quo ullam nesciunt quia corrupti deserunt quas sapiente molestiae quod accusamus, autem non ipsum? Minus enim quas nisi sint numquam temporibus quo quae quia cum ducimus officiis debitis natus reiciendis officia blanditiis, exercitationem aut labore omnis adipisci! Quaerat, voluptates. Sequi molestias facilis, hic blanditiis tempore dolor repellat animi aperiam exercitationem veritatis recusandae unde vitae voluptas rem velit amet vero! Id fugiat dicta aspernatur molestiae sint velit quaerat quos a beatae, animi consequuntur iure sit debitis harum. Sed aperiam possimus a recusandae id ut odio ea earum eligendi eius fuga mollitia officiis quis ad nisi alias, quisquam accusamus, eum ex. Id, consectetur! Earum, maxime? Numquam dicta voluptatibus provident temporibus qui beatae suscipit. Provident corporis et, tenetur quisquam doloremque assumenda animi, atque aliquam laudantium, quos aut soluta! Qui, culpa necessitatibus est officiis, temporibus reiciendis beatae nam dignissimos incidunt corrupti quos dolor ratione obcaecati iusto numquam? Cum aliquid quod dolorum dolorem, eum officia voluptatum necessitatibus facilis? Repellendus soluta minus dolorem reiciendis
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolore autem quo harum, commodi explicabo, pariatur earum laudantium repellendus doloribus cupiditate eveniet tenetur ipsa dolores ex aut provident blanditiis ipsum consectetur animi magnam minus reiciendis. Rerum earum officiis ullam repellendus velit possimus nisi perferendis error reprehenderit quos ea, mollitia saepe pariatur enim aut sunt praesentium consectetur, laborum nemo harum! Adipisci aliquid quod repellat atque eveniet distinctio dignissimos totam consectetur, asperiores provident reiciendis error eaque est facilis soluta temporibus numquam, blanditiis vitae laudantium ipsum magnam velit illum ullam. Est mollitia repellendus voluptatum id nemo reiciendis, quis placeat omnis dolorum nam ipsam vitae nulla fugit porro delectus? Distinctio nesciunt aliquid, provident natus dolorem nam minima molestias quos hic repudiandae dolor excepturi temporibus quidem dolore doloribus adipisci officiis quibusdam esse numquam, in ducimus? Alias quia veniam nisi. Nostrum nemo tempore animi officia quidem minima facere quo ullam nesciunt quia corrupti deserunt quas sapiente molestiae quod accusamus, autem non ipsum? Minus enim quas nisi sint numquam temporibus quo quae quia cum ducimus officiis debitis natus reiciendis officia blanditiis, exercitationem aut labore omnis adipisci! Quaerat, voluptates. Sequi molestias facilis, hic blanditiis tempore dolor repellat animi aperiam exercitationem veritatis recusandae unde vitae voluptas rem velit amet vero! Id fugiat dicta aspernatur molestiae sint velit quaerat quos a beatae, animi consequuntur iure sit debitis harum. Sed aperiam possimus a recusandae id ut odio ea earum eligendi eius fuga mollitia officiis quis ad nisi alias, quisquam accusamus, eum ex. Id, consectetur! Earum, maxime? Numquam dicta voluptatibus provident temporibus qui beatae suscipit. Provident corporis et, tenetur quisquam doloremque assumenda animi, atque aliquam laudantium, quos aut soluta! Qui, culpa necessitatibus est officiis, temporibus reiciendis beatae nam dignissimos incidunt corrupti quos dolor ratione obcaecati iusto numquam? Cum aliquid quod dolorum dolorem, eum officia voluptatum necessitatibus facilis? Repellendus soluta minus dolorem reiciendis.</p>
+</body>
+</html>

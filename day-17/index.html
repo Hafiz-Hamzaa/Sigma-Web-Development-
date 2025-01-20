@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade Algorithm</title>
+    <style>
+        /* Specificity Calculation */
+        /* Universeal = 0 */
+        *{
+            margin: 0;
+            position: relative;
+        }
+        /* Class & Attribuute = 10 */
+        .divone > p{
+            background-color: aqua;
+        }
+        #idone>p{
+            background-color: blueviolet;
+        }
+        /* Element = 1  important = 10000*/
+        p{
+            background-color: yellow !important;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="divone" id="idone">
+        <!-- Inline = 1000 -->
+        <p style="background-color: palegreen;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, optio.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Unit & Display</title>
+    <style>
+        div > p{
+            font-size: 25px;
+        }
+        .box{
+            /* Responsive Unit */
+            width: 80vw;
+            height: 60vh;
+            background-color: palevioletred;
+            margin: 0px auto;
+            font-size: 2rem;
+            font-size: 15px;
+        }
+        .box1{
+            font-size: 2em;
+        }
+        .per{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+        }
+        .ch{
+            background-color: peru;
+            width: 50%;
+            height: 50%;
+        }
+        /* Button is a inline element ham usko inline se block bh bna skte hai */
+        .btn > button{
+            display: block;
+        }
+        /* div is a block elemnet ham isko inline-block krkste hai */
+        .one{
+            width: 120px;
+            height: 120px;
+            background-color: aquamarine;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Absolute Unit => px -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, blanditiis!</p>
+    </div>
+
+    <!-- Relative Unit => em,rem,vh,vw,% -->
+    <div class="box">This is a div
+        <div class="box1">
+            This is another box
+        </div>
+    </div>
+
+    <div class="per">
+        <div class="ch"></div>
+    </div>
+
+    <!-- Display Properties -->
+    <div class="btn">
+    <button>Click me</button>
+    <button>Search</button>
+    </div>
+
+    <div class="cont">
+    <div class="one"></div>
+    <div class="one"></div>
+    </div>
+</body>
+</html>
