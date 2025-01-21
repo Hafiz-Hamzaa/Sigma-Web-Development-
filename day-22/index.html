@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable & Media Queries</title>
+    <style>
+        /* CSS Variable me ham aik variable bnalete hai kai jese hame website me 40 colors use krne hai to ham individually sb per jaker nh krgai to ham global varibale bna legai or usko use krlegai */
+        /* global variable */
+        :root{
+            --color:aqua;
+            --seccolor:purple;
+            --defpad:12px
+        }
+        .box>p{
+            background-color: var(--seccolor);
+            padding: var(--defpad);
+            color: var(--color);
+            /* local variable */
+            /* --color:yellow; */
+        }
+        /* Media Query */
+        @media screen and (max-width:350px) {
+            .boxone{
+                width: 120px;
+                height: 120px;
+                background-color: palevioletred;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, perferendis veritatis quibusdam magnam reprehenderit dolor.</p>
+    </div>
+
+    <!-- Media Query -->
+    <div class="boxone"></div>
+</body>
+</html>

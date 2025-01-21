@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise -06</title>
+    <style>
+        header{
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            gap: 20px;
+            /* margin-right: 10%; */
+        }
+        ul>li{
+            list-style: none;
+            font-size: 30px;
+            color: black;
+            font-weight: 600;
+        }
+        button{
+            width: 120px;
+            height: 30px;
+            background-color: black;
+            color: #fff;
+            border-radius: 20px;
+            border: 0;
+        }
+        @media screen and (max-width:860px) {
+            header{
+                flex-direction: column;
+            }
+            ul{
+                flex-direction: column;
+            }
+            button{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="https://up.yimg.com/ib/th?id=OIP.rv6rEXU2wV2cz2Ls4s9UkAHaHa&pid=Api&rs=1&c=1&qlt=95&w=119&h=119" alt="logo" width=70 style=" margin-left: 10%;">
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Product</li>
+                    <li>Blog</li>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Contact</li>
+                    <button>Search</button>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

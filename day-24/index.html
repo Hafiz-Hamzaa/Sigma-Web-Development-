@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise -05</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: rgb(135, 222, 135);
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            gap: 20px;
+        }
+        ul>li{
+            list-style: none;
+            font-size: 20px;
+            color: black;
+            font-weight: 600;
+        }
+        .container{
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: auto;
+            padding-top: 20px;
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color: peru;
+            border: 2px solid black;
+        }
+        .frame{
+            width: 50vw;
+            height: 15vh;
+            border-radius: 20px;
+            margin: 0px auto;
+            border:5px solid blue;
+            margin-top: 10px;
+        }
+        .text{
+            text-align: center;
+            font-size: 30px;
+            padding-top: 30px;
+        }
+        .cir{
+            width: 100px;
+            height: 100px;
+            background-color: peru;
+            border-radius: 50%;
+            position:fixed;
+            right: 0;
+        }
+        footer{
+            width: 100%;
+            height: 40px;
+            background-color: chartreuse;
+            margin-top: 10px;
+        }
+        footer p {
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Blog</li>
+                <li>Team</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="cir"></div>
+        <div class="frame">
+            <div class="text">Welcome To Sigma Web Development Express</div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

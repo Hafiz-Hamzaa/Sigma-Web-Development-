@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise -04</title>
+    <style>
+        /* Create a Multicolor Navbar with theb help of CSS Varaible */
+        *{
+            margin: 0;padding: 0;
+        }
+        /* :root{
+            --primary-color:green;
+            --text-color:white;
+            --secondary-color:rgb(84, 133, 84);
+        } */
+        :root{
+            --primary-color:rgb(0, 81, 128);
+            --text-color:white;
+            --secondary-color:rgb(84, 119, 133);
+        }
+        body{
+            background-color: rgb(214, 88, 214);
+            background-color: var(--primary-color);
+        }
+        ul{
+            background-color: rgb(167, 49, 167);
+            background-color: var(--secondary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            height: 60px;
+        }
+        ul>li{
+            list-style: none;
+            color: #fff;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

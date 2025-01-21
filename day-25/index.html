@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 80vw;
+            height: 50vh;
+            border: 5px solid peru;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            flex-flow: column wrap;
+            /* flex-direction: column-reverse; */
+            /* align-content: center; */
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            border: 5px solid black;
+        }
+        /* #one{
+            align-self: flex-end;
+        } */
+        /* #two{
+            flex-grow: 2;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="one"></div>
+        <div class="box" id="two"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

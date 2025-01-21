@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filter</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            height: 60vh;
+            align-items: center;
+            gap: 50px;
+        }
+        .img-1{
+            filter: blur(2px);
+            /* filter: brightness(90%); */
+            /* filter: contrast(120%); */
+        }
+        .img-2{
+            /* filter: grayscale(100%); */
+            /* filter: invert(40%); */
+            filter: opacity(0.55);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.1H4TjeN5dyNQdkXtz-q7IwHaE2&pid=Api&P=0&h=220" alt="img" class="img-1">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.IVgFWcjC50FqG0I80RCnlwHaEK&pid=Api&P=0&h=220" alt="img" class="img-2">
+    </div>
+</body>
+</html>
