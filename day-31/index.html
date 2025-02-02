@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Variables & Datatypes</title>
+</head>
+<body>
+    <script>
+        // Browser Features
+        // alert("Hello World!");
+        // var a = prompt("What is Your Name");
+        // console.log(`My name is ${a}`);
+        // var b = confirm("Are your sure your age is 12");
+        // console.log(`Ok Thanks...`);
+        
+        // Variables & Data Types
+        // 7 Primitive Data Types
+        var x = "String"
+        var y = 12
+        var z = true
+        var c = 23.45
+        var d;
+        var e = null
+        var f = 23457885858
+        var g = Symbol("Unique")
+        console.log(x,y,z,c,d,e,f,g)
+        console.log(typeof x,typeof y,typeof z,typeof c, typeof d,typeof e,typeof f, typeof g);
+
+        // Non-Primitive Data Types
+        // Objects =>(Array and Functions)
+        let obj = {
+            name : "Ali",
+            age : 23,
+            ismarried : true
+        }
+        console.log(obj);
+        console.log(obj.ismarried); // access key
+        obj.name = "Huzaifa" // updated
+        console.log(obj);
+    </script>
+</body>
+</html>
