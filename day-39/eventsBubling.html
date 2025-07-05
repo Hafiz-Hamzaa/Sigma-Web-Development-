@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Bubblig in JS</title>
+    <style>
+        .container{
+            width: 120px;
+            height: 120px;
+            background-color: aqua;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        .child-container{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            padding: 25px;
+        }
+        .child{
+            width: 80px;
+            height: 80px;
+            background-color: green;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-container">
+            <div class="child">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* 🔥 Event Bubbling Kya Hota Hai?
+Jab ek nested element (child) par koi event (jaise click) hota hai, to wo event sabse pehle us element par trigger hota hai, phir uske parent par, phir grandparent par... aise hi upar tak propagate hota hai.
+Is process ko event bubbling kehte hain — event bubble hota hua upar jaata hai. */
+        document.querySelector(".child").addEventListener("click",(e) => {
+//   e.stopPropagation() : Ye line event bubbling ko rok deti hai. So, jab user .child (green box) par click karta hai:
+// Sirf "Child was clicked" wala alert dikhai deta hai
+// Event upar propagate nahi hota
+            e.stopPropagation()
+            alert("Child was clicked")
+        })
+        document.querySelector(".child-container").addEventListener("click",() => {
+            alert("Child Container was clicked")
+        })
+        document.querySelector(".container").addEventListener("click",() => {
+            alert("Container was clicked")
+        })
+    </script>
+</body>
+</html>
